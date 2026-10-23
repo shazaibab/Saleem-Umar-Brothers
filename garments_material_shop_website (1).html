@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071b24">
+<title>Your Shop Name | Garments Materials</title>
+<style>
+:root{--navy:#071b24;--green:#08b765;--mint:#dff8eb;--ink:#13232c;--muted:#62717a;--line:#e5ecef;--paper:#f7faf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #071b2420}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}.logo{display:grid;place-items:center;background:#12313a;border:1px solid #35505a;border-radius:12px;width:42px;height:42px;font-size:23px}.brand small{display:block;font-size:11px;font-weight:500;color:#b9cbd0;margin-top:3px}.navlinks{display:flex;align-items:center;gap:22px;font-size:13px;color:#e1eaec}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:12px;background:var(--green);color:white;padding:13px 17px;font-weight:800;cursor:pointer}.btn:hover{filter:brightness(.96)}.btn-outline{background:transparent;border:1px solid #ffffff70}.hero{background:linear-gradient(120deg,#071b24 0%,#10343a 58%,#174e43 100%);color:white;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:65px 0}.eyebrow{color:#8cf0b8;font-size:12px;letter-spacing:2px;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.06;margin:14px 0}.hero h1 span{color:#82efb2}.hero p{color:#d3e2e4;line-height:1.7;max-width:510px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.hero-art{min-height:310px;border-radius:26px;background:radial-gradient(circle at 50% 35%,#35665b 0,#153b3b 42%,#0b252e 76%);display:grid;place-items:center;border:1px solid #ffffff20;position:relative;padding:20px}.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;max-width:420px;transform:rotate(-3deg)}.material{aspect-ratio:1/1;background:#f5eee3;color:#17252a;border-radius:17px;display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 12px 24px #0003;font-size:44px}.material:nth-child(2){background:#dfe9e7}.material:nth-child(3){background:#e9d8bb}.material:nth-child(4){background:#e9ecef}.material:nth-child(5){background:#f0d6d4}.material:nth-child(6){background:#e7e0f0}.material span{font-size:10px;font-weight:800;letter-spacing:1px;margin-top:5px}
+.trust{background:white;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:19px 0}.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800}.trust-item b{font-size:22px}
+section{padding:50px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:22px}.section-head h2{font-size:28px;margin:0 0 6px}.section-head p{margin:0;color:var(--muted);font-size:14px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{background:white;border:1px solid var(--line);border-radius:16px;padding:20px 12px;text-align:center;transition:.2s}.category:hover,.product:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0a2a3210}.cat-icon{height:70px;display:grid;place-items:center;font-size:42px;background:#eff8f3;border-radius:12px;margin-bottom:12px}.category strong{display:block;font-size:14px}.category small{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:white;border:1px solid var(--line);border-radius:17px;padding:14px;transition:.2s}.product-art{height:155px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#f2f6f4,#e3eee8);font-size:60px}.product h3{font-size:16px;margin:14px 0 6px}.product p{font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 12px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-size:14px;font-weight:800;color:#087b4b}.product .btn{font-size:12px;padding:10px 12px}
+.banner{background:#e5f8ed;border:1px solid #c9efd9;border-radius:20px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0 0 8px;font-size:25px}.banner p{margin:0;color:#47645a;line-height:1.5;font-size:14px}
+footer{background:var(--navy);color:white;padding:30px 0;margin-top:20px}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-row p{color:#b7c8cc;font-size:12px;margin:8px 0 0}.footer-links{display:flex;gap:16px;font-size:13px;color:#d6e2e4}
+.notice{font-size:12px;color:#60717a;text-align:center;padding:12px}
+@media(max-width:760px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;padding:45px 0}.hero-art{min-height:250px}.trust-grid{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.section-head h2{font-size:24px}.banner{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.products{grid-template-columns:1fr}.product-art{height:180px}.hero h1{font-size:39px}.brand{font-size:16px}.hero-art{min-height:220px}.material{font-size:34px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="logo">♧</span><span><span id="brandName">Your Shop Name</span><small>Garments Material Store</small></span></a>
+<nav class="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#contact">Contact</a></nav>
+<a class="btn" id="topWhatsApp" href="#" target="_blank" rel="noopener">☏ Order on WhatsApp</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Garments materials • Wholesale & retail</div><h1>Quality Material<br>for <span>Better Fashion.</span></h1><p>Buttons, zippers, labels, tags, tapes, buckles and more — everyday essentials for your garments business, all in one place.</p><div class="hero-actions"><a class="btn" id="heroWhatsApp" href="#" target="_blank" rel="noopener">☏ Order on WhatsApp →</a><a class="btn btn-outline" href="#products">Explore Products ↓</a></div></div>
+<div class="hero-art" aria-label="Illustration of garment accessories"><div class="material-grid"><div class="material">⚫<span>BUTTONS</span></div><div class="material">〰️<span>ZIPPERS</span></div><div class="material">🏷️<span>LABELS</span></div><div class="material">🧵<span>THREAD</span></div><div class="material">🎗️<span>TAPES</span></div><div class="material">🔗<span>BUCKLES</span></div></div></div>
+</div></section>
+<div class="trust"><div class="wrap trust-grid"><div class="trust-item"><b>✓</b><span>Quality Materials<br><small>Made for daily business needs</small></span></div><div class="trust-item"><b>◇</b><span>Wholesale & Retail<br><small>Ask us about bulk quantities</small></span></div><div class="trust-item"><b>☏</b><span>Easy WhatsApp Orders<br><small>Quick product enquiries</small></span></div></div></div>
+<section id="categories"><div class="wrap"><div class="section-head"><div><h2>Shop by Category</h2><p>Browse the materials you need.</p></div></div><div class="categories">
+<a class="category" href="#products"><div class="cat-icon">⚫</div><strong>Buttons</strong><small>Styles, colours & sizes</small></a>
+<a class="category" href="#products"><div class="cat-icon">〰️</div><strong>Zippers</strong><small>Different types & lengths</small></a>
+<a class="category" href="#products"><div class="cat-icon">🏷️</div><strong>Labels</strong><small>Woven and printed</small></a>
+<a class="category" href="#products"><div class="cat-icon">🎗️</div><strong>Tags & Tapes</strong><small>Garment finishing</small></a>
+<a class="category" href="#products"><div class="cat-icon">🔗</div><strong>Buckles</strong><small>Garment accessories</small></a>
+<a class="category" href="#products"><div class="cat-icon">🧵</div><strong>Threads</strong><small>Multiple colours</small></a>
+<a class="category" href="#products"><div class="cat-icon">📌</div><strong>Pins & Clips</strong><small>Useful essentials</small></a>
+<a class="category" href="#products"><div class="cat-icon">＋</div><strong>Other Materials</strong><small>Ask about availability</small></a>
+</div></div></section>
+<section id="products" style="padding-top:10px"><div class="wrap"><div class="section-head"><div><h2>Featured Products</h2><p>Sample products — update names and prices to match your shop.</p></div></div><div class="products">
+<article class="product"><div class="product-art">⚫</div><h3>Garment Buttons</h3><p>Mixed styles and sizes. Ask for available colours and pack quantities.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Garment Buttons" href="#">Order</a></div></article>
+<article class="product"><div class="product-art">〰️</div><h3>Nylon Zippers</h3><p>Different lengths and colours for garment use.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Nylon Zippers" href="#">Order</a></div></article>
+<article class="product"><div class="product-art">🏷️</div><h3>Woven Labels</h3><p>Ask about custom labels, minimum quantities and options.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Woven Labels" href="#">Order</a></div></article>
+<article class="product"><div class="product-art">🎟️</div><h3>Hang Tags</h3><p>Garment tags for branding and product details.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Hang Tags" href="#">Order</a></div></article>
+<article class="product"><div class="product-art">🎗️</div><h3>Tapes & Ribbons</h3><p>Ask about material, width, colour and roll quantities.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Tapes and Ribbons" href="#">Order</a></div></article>
+<article class="product"><div class="product-art">🔗</div><h3>Buckles & Accessories</h3><p>Garment and bag accessories in available styles.</p><div class="product-bottom"><span class="price">Price on request</span><a class="btn order-product" data-product="Buckles and Accessories" href="#">Order</a></div></article>
+</div></div></section>
+<section id="contact" style="padding-top:5px"><div class="wrap"><div class="banner"><div><h2>Need a product or bulk order?</h2><p>Message us on WhatsApp for prices, stock, sizes and wholesale quantities.</p></div><a class="btn" id="bottomWhatsApp" href="#" target="_blank" rel="noopener">☏ Chat on WhatsApp</a></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div class="brand"><span class="logo">♧</span><span><span id="footerName">Your Shop Name</span><small>Garments Material Store</small></span></div><div class="footer-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#contact">Contact</a></div><p>© <span id="year"></span> Your Shop Name. All rights reserved.</p></div></footer>
+<div class="notice">Before publishing: add your real WhatsApp number in the file's SETTINGS section.</div>
+<script>
+/* SETTINGS — edit these two values before publishing */
+const SHOP_NAME = "Saleem Umer Brothers Garments Material Store";
+const WHATSAPP_NUMBER = "REPLACE_WITH_YOUR_NUMBER"; // Replace with your WhatsApp number, country code included; digits only.
+const greeting = "Assalam-o-Alaikum! I want to ask about garments materials.";
+function waUrl(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
+document.title=SHOP_NAME+" | Garments Materials";
+document.getElementById("brandName").textContent=SHOP_NAME;
+document.getElementById("footerName").textContent=SHOP_NAME;
+document.querySelector("footer .wrap p").textContent="© "+new Date().getFullYear()+" "+SHOP_NAME+". All rights reserved.";
+document.getElementById("year").textContent=new Date().getFullYear();
+["topWhatsApp","heroWhatsApp","bottomWhatsApp"].forEach(id=>document.getElementById(id).href=waUrl(greeting));
+document.querySelectorAll(".order-product").forEach(link=>{link.href=waUrl("Assalam-o-Alaikum! I want to order/enquire about: "+link.dataset.product+". Please share price and availability.");link.target="_blank";link.rel="noopener";});
+</script>
+</body>
+</html>
